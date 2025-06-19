@@ -12,6 +12,8 @@ const Navbar = () => {
     const logout = ()=>{
         setToken(false)
         localStorage.removeItem('token')
+        //check this once again
+        navigate('/')
     }
 
     return (
