@@ -42,14 +42,13 @@ const AppContextProvider = (props) => {
         }catch(error){
             console.log(error);
             toast.error(error.message);
-
         }
     }
-    console.log(userData)
+    
     
 
     const value ={
-        doctors,currencySymbol,token,setToken,backendUrl,userData,setUserData,loadUserProfileData
+        doctors,currencySymbol,token,setToken,backendUrl,userData,setUserData,loadUserProfileData,getDoctorsData
     }
     
 
