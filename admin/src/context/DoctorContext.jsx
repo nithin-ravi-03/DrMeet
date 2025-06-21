@@ -11,6 +11,7 @@ const DoctorContextProvider = (props)=>{
     const [dToken,setDToken] = useState(localStorage.getItem('dToken')? localStorage.getItem('dToken'):'')
     const [appointments,setAppointments] = useState([])
     const [dashData,setDashData] = useState(false)
+    const [profileData,setProfileData] = useState(false)
 
     const getAppointments = async()=>{
         try{
@@ -84,8 +85,26 @@ const DoctorContextProvider = (props)=>{
         }
     }
 
+    //function to get profile data from /api/doctor/profile
+    const getProfileData = async()=>{
+        try{
+            const {data} = await axios.get(backendUrl + '/api/doctor/profile',{headers:{dToken}})
+            if(data.success){
+                setProfileData(data.profileData)
+                console.log(data.profileData)
+            }else{
+                toast.error(data.message)
+            }
+
+        }catch(error){
+            console.log(error)
+            toast.error(error.message)
+
+        }
+    }
+
     const value={
-        dToken,setDToken,backendUrl,appointments,setAppointments,getAppointments,completeAppointment,cancelAppointment,getDashData,dashData,setDashData
+        dToken,setDToken,backendUrl,appointments,setAppointments,getAppointments,completeAppointment,cancelAppointment,getDashData,dashData,setDashData,getProfileData,profileData,setProfileData
     }
 
     return(

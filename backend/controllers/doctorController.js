@@ -140,5 +140,38 @@ const doctorDashboard = async(req,res)=>{
     }
 }
 
+//API to get doctor profile for doctor panel
+const doctorProfile = async(req,res)=>{
+    try{
+        const docId = req.docId
+        const profileData = await doctorModel.findById(docId).select('-password')
 
-export {changeAvailability,doctorList,loginDoctor,appointmentsDoctor, appointmentComplete, appointmentCancel, doctorDashboard}
+        if(profileData){
+            return res.status(200).json({success:true,profileData})
+        }else{
+            return res.status(400).json({success:false,message:"No profile found"})
+        }
+    }catch(error){
+        console.log(error)
+        res.status(500).json({success:false,message:error.message})
+    }
+}
+
+//API to update doctor profile for doctor panel
+const updateDoctorProfile = async (req, res) => {
+    try {
+        const docId = req.docId
+        const { fees, address, available, about } = req.body
+
+        await doctorModel.findByIdAndUpdate(docId, { fees, address, available, about })
+
+        res.json({ success: true, message: 'Profile Updated' })
+    } catch (error) {
+        console.log(error)
+        res.json({ success: false, message: error.message })
+    }
+}
+
+
+
+export {changeAvailability,doctorList,loginDoctor,appointmentsDoctor, appointmentComplete, appointmentCancel, doctorDashboard, doctorProfile, updateDoctorProfile}
