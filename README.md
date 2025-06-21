@@ -5,7 +5,7 @@
 
 A full-stack MERN application for booking doctor appointments with three user roles (patient, doctor, admin), online payments, and appointment management.
 
-[![Live Preview](https://img.shields.io/badge/Live_Preview-Available-brightgreen)](https://drmeet-demo.netlify.app)
+[![Live Preview]([https://img.shields.io/badge/Live_Preview-Available-brightgreen)](https://drmeet-demo.netlify.app](https://drmeet-frontend.onrender.com/))
 
 ## Features
 
