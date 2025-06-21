@@ -1,11 +1,10 @@
 # DrMeet - Doctor Appointment Booking System
 
-![DrMeet Banner]([DrMeet-white-bg](https://github.com/user-attachments/assets/02e31be5-467a-4427-909f-c8ad292e7028)
-)
 
 A full-stack MERN application for booking doctor appointments with three user roles (patient, doctor, admin), online payments, and appointment management.
 
-[![Live Preview]([https://img.shields.io/badge/Live_Preview-Available-brightgreen)](https://drmeet-demo.netlify.app](https://drmeet-frontend.onrender.com/))
+[![Live Preview](https://img.shields.io/badge/Live_Preview-Available-brightgreen)](https://drmeet-frontend.onrender.com/)
+
 
 ## Features
 
@@ -59,29 +58,17 @@ A full-stack MERN application for booking doctor appointments with three user ro
 ## Screenshots
 
 ### Homepage
-![Homepage](./screenshots/homepage.png)
+![Homepage](https://github.com/user-attachments/assets/2278d8dd-6f94-493c-95b1-c11867b6d0ce)
 
 ### Doctor Listing
-![Doctor Listing](./screenshots/doctor-listing.png)
+[![Doctor Listing](https://github.com/user-attachments/assets/db6dfa2f-9b09-4b10-88cb-40ebd94115d6)
 
 ### Appointment Booking
-![Appointment Booking](./screenshots/booking.png)
+![Appointment Booking](https://github.com/user-attachments/assets/2c5c63a5-8466-4d0c-b362-d86469db823a)
 
 ### Admin Dashboard
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+![Admin Dashboard](https://github.com/user-attachments/assets/434e8343-7fa7-4bd6-9459-c962229bb440)
 
 ### Doctor Dashboard
-![Doctor Dashboard](./screenshots/doctor-dashboard.png)
+![Doctor Dashboard](https://github.com/user-attachments/assets/d9c73d5d-8153-4c1c-a9ab-ab077029751e)
 
-## How to Add Screenshots
-
-1. Create a `screenshots` folder in your project root
-2. Save your images as PNG/JPG files in this folder
-3. Name them descriptively (as shown above)
-4. Use the relative paths shown in the markdown (e.g., `./screenshots/filename.png`)
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/drmeet.git
