@@ -9,9 +9,9 @@ const Footer = () => {
         
         {/* Left Side */}
         <div>
-          <img className='mb-5 w-40' src={assets.logo} alt="Prescripto Logo" />
+          <img className='mb-5 w-32' src={assets.DrMeet_logo} alt="Prescripto Logo" />
           <p className='w-full md:w-2/3 text-gray-200 leading-6'>
-            Prescripto is a smart doctor appointment booking platform designed to simplify healthcare access. We connect patients with trusted medical professionals, offering seamless scheduling and personalized care—all in one place.
+            DrMeet is a smart doctor appointment booking platform designed to simplify healthcare access. We connect patients with trusted medical professionals, offering seamless scheduling and personalized care—all in one place.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
           <p className='text-xl font-semibold mb-5'>GET IN TOUCH</p>
           <ul className='flex flex-col gap-2 text-gray-200'>
             <li>+1-212-456-7890</li>
-            <li>greatstackdev@gmail.com</li>
+            <li>DrMeet@gmail.com</li>
           </ul>
 
           <div className='flex gap-4 mt-4 text-gray-200'>
@@ -55,7 +55,7 @@ const Footer = () => {
       <div>
         <hr className="border-gray-300 opacity-40" />
         <p className='py-5 text-center text-sm text-gray-200'>
-          © 2024 Prescripto.com — All Rights Reserved.
+          © 2024 DrMeet.com — All Rights Reserved.
         </p>
       </div>
     </div>
