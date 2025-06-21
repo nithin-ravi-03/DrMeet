@@ -36,6 +36,12 @@ const Navbar = () => {
                 <li className='py-1 cursor-pointer'>Contact</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
+            {/* Add Admin Panel button here */}
+            <li 
+                className='py-1 px-3 rounded-full bg-indigo-100 text-indigo-700 hover:bg-indigo-200 transition-colors cursor-pointer'
+                onClick={() => window.open(import.meta.env.VITE_ADMIN_URL, '_blank')}>
+                Admin Panel
+            </li>
         </ul>
         <div className='flex items-center gap-4'>
             {
@@ -70,6 +76,14 @@ const Navbar = () => {
                     <NavLink onClick={() => setShowMenu(false)} to='/doctors' ><p className='px-4 py-2 rounded full inline-block'>ALL DOCTORS</p></NavLink>
                     <NavLink onClick={() => setShowMenu(false)} to='/about' ><p className='px-4 py-2 rounded full inline-block'>ABOUT</p></NavLink>
                     <NavLink onClick={() => setShowMenu(false)} to='/contact' ><p className='px-4 py-2 rounded full inline-block'>CONTACT</p></NavLink>
+                    {/* Add Admin Panel button for mobile here */}
+                    <p className='px-4 py-2 rounded full inline-block cursor-pointer' 
+                    onClick={() => {
+                            setShowMenu(false);
+                            window.open(import.meta.env.VITE_ADMIN_URL, '_blank');
+                    }}>
+                        ADMIN PANEL
+                    </p>
                 </ul>
             </div>
         </div>
